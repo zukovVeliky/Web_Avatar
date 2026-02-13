@@ -10,8 +10,6 @@ Znovupouzitelna avatar komponenta s orezem obrazku, navazana na `Web_FileManager
 
 ## Obsah repozitare
 
-- `Pages/AvatarFileManager.cshtml`
-- `Pages/AvatarFileManager.cshtml.cs`
 - `Areas/Avatar/EditaceAvatara.cshtml`
 - `Areas/Avatar/EditaceAvatara.cshtml.cs`
 - `Areas/Avatar/AvatarCropp.cs`
@@ -20,6 +18,8 @@ Znovupouzitelna avatar komponenta s orezem obrazku, navazana na `Web_FileManager
 - `wwwroot/lib/Avatar/croppie.css`
 - `wwwroot/lib/Avatar/EditaceAvatara.js`
 - `wwwroot/Images/Foto_Avatar/1000.jpg`
+
+Repo neobsahuje hotovou cilovou stranku. Obsahuje pouze komponentove soubory a manual pro vlozeni do vlastni stranky.
 
 ## Pozadavky
 
@@ -37,6 +37,7 @@ Znovupouzitelna avatar komponenta s orezem obrazku, navazana na `Web_FileManager
 4. Over, ze projekt ma dostupne:
    - `WebApplication1.Services.ComponentSettings.*` (z `Web_FileManager`)
    - `/FileManager` route (z `Web_FileManager`)
+5. Vytvor si vlastni Razor Page (nebo partial), kde Avatar vlozis.
 
 ## Konfigurace
 
@@ -83,3 +84,13 @@ Nad tim pak probiha orez a ulozeni vystupu.
   - nevalidni crop payload
 - obrazek po ulozeni chybi:
   - blokovane staticke soubory / spatna URL base
+
+## Vlozeni do vlastni stranky (manual)
+
+1. V `PageModel` vytvor `EditaceAvataraModel`.
+2. Do `OnGet` (a `OnPost`) nacitej nastaveni a inicializuj model.
+3. V `.cshtml` vykresli partial:
+   - `@await Html.PartialAsync("~/Areas/Avatar/EditaceAvatara.cshtml", Model.AvatarEditor)`
+4. Pridej tlacitko, ktere otevre `/FileManager?picker=1...` s callbackem `ZachyceniURL_<modifier>`.
+5. Pri `OnPost` precti hidden field `HiddenParametry_<modifier>` a zavolej:
+   - `AvatarCropp.GetNewAvatar(...)`

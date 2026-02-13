@@ -6,10 +6,10 @@
 
 ## 2. Required files
 
-- `Pages/AvatarFileManager.cshtml(.cs)`
 - `Areas/Avatar/*`
 - `wwwroot/lib/Avatar/*`
 - fallback image `wwwroot/Images/Foto_Avatar/1000.jpg`
+ - vlastni Razor Page, ktera Avatar komponentu vykresli
 
 ## 3. Required config
 
@@ -25,8 +25,8 @@
 
 ## 5. Smoke test
 
-1. otevri `/AvatarFileManager`
-2. klikni `Vybrat obrazek z FileManageru`
+1. otevri svoji stranku s Avatar komponentou
+2. klikni vlastni tlacitko `Vybrat obrazek z FileManageru`
 3. vyber obrazek
 4. proved orez (Ctrl + drag/zoom)
 5. uloz
