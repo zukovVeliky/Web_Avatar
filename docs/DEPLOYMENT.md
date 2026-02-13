@@ -6,10 +6,11 @@
 
 ## 2. Required files
 
+- `Pages/AvatarFileManager.cshtml(.cs)` (jen demo, volitelne)
 - `Areas/Avatar/*`
 - `wwwroot/lib/Avatar/*`
 - fallback image `wwwroot/Images/Foto_Avatar/1000.jpg`
- - vlastni Razor Page, ktera Avatar komponentu vykresli
+- vlastni Razor Page, ktera Avatar komponentu vykresli
 
 ## 3. Required config
 

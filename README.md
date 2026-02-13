@@ -10,6 +10,8 @@ Znovupouzitelna avatar komponenta s orezem obrazku, navazana na `Web_FileManager
 
 ## Obsah repozitare
 
+- `Pages/AvatarFileManager.cshtml` (demo)
+- `Pages/AvatarFileManager.cshtml.cs` (demo)
 - `Areas/Avatar/EditaceAvatara.cshtml`
 - `Areas/Avatar/EditaceAvatara.cshtml.cs`
 - `Areas/Avatar/AvatarCropp.cs`
@@ -19,7 +21,11 @@ Znovupouzitelna avatar komponenta s orezem obrazku, navazana na `Web_FileManager
 - `wwwroot/lib/Avatar/EditaceAvatara.js`
 - `wwwroot/Images/Foto_Avatar/1000.jpg`
 
-Repo neobsahuje hotovou cilovou stranku. Obsahuje pouze komponentove soubory a manual pro vlozeni do vlastni stranky.
+## Dulezite: demo vs integrace
+
+- `Pages/AvatarFileManager.*` je pouze demonstracni ukazka pouziti.
+- Demo stranka neslouzi jako povinna integracni vrstva do produkcnich projektu.
+- Pro realnou integraci pouzij `Areas/Avatar/*` a vloz komponentu do sve vlastni stranky dle manualu nize.
 
 ## Pozadavky
 
