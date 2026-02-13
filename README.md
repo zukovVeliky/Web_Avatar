@@ -2,6 +2,15 @@
 
 Znovupouzitelna avatar komponenta s orezem obrazku, navazana na `Web_FileManager` picker.
 
+## Souvisejici repozitare (cross-reference)
+
+Pokud mas otevreny pouze tento repozitar, ostatni komponenty dohledej zde:
+
+- `Web_FileManager`: https://github.com/zukovVeliky/Web_FileManager
+  - centralni file picker + sprava souboru + API.
+- `Web_CkEditor`: https://github.com/zukovVeliky/Web_CkEditor
+  - CKEditor 5 komponenta s vyberem souboru pres FileManager.
+
 ## Zasadni informace
 
 - Avatar editor otevira obrazky pres `/FileManager`.
