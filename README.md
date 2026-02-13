@@ -26,6 +26,7 @@ Znovupouzitelna avatar komponenta s orezem obrazku, navazana na `Web_FileManager
 - ASP.NET Core Razor Pages
 - komponenta `Web_FileManager`
 - nastaveni `Avatar` sekce v `components.settings.json` (z `Web_FileManager`)
+- NuGet balicek `System.Drawing.Common` (pro server-side crop)
 
 ## Instalace
 
